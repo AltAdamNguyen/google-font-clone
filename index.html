@@ -23,8 +23,8 @@
                 </div>
                 <div class="w-full h-[88px] flex items-center">
                     <div class="bg-[#dde7f966] dark:bg-[#6291fc1a] flex gap-4 items-center p-4 w-full rounded-[48px]">
-                        <i class="fa-solid fa-magnifying-glass text-[18px] text-[#5f6368] dark:text-white"></i>
-                        <input type="text" class="border-none bg-transparent input_search" placeholder="Search fonts">
+                        <button id="btn_search"><i class="fa-solid fa-magnifying-glass text-[18px] text-[#5f6368] dark:text-white"></i></button>
+                        <input type="text" class="border-none bg-transparent input_search w-full" placeholder="Search fonts" id="input_text">
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                 </button>
             </div>
         </div>
-        <div class="overflow-y-auto">
+        <div class="overflow-y-auto text-[#202124] dark:text-[#e8eaed]">
             <div class="flex justify-between items-center mb-4 text-[#5f6368] dark:text-[#9aa0a6]">
                 <span class="text-[12px] font-semibold">1718 of 1718 families</span>
                 <div class="flex items-center gap-5">
@@ -45,175 +45,53 @@
                         <i class="fa-regular fa-circle-exclamation fa-rotate-180 text-[20px]"></i>
                     </div>
                     <div class="flex border border-solid rounded-md text-[20px]">
-                        <button class="m-1 h-fit leading-none "><i class="fa-regular fa-table-cells"></i></button>
+                        <button class="m-1 h-fit leading-none" id="btn_grid"><i class="fa-regular fa-table-cells"></i></button>
                         <div class="min-h-full w-[1px] bg-[#e5e7eb]"></div>
-                        <button class="m-1 h-fit leading-none text-[#1a73e8] dark:text-[#8ab4f8]"><i class="fa-solid fa-table-list"></i></button>
+                        <button class="m-1 h-fit leading-none" id="btn_list"><i class="fa-solid fa-table-list"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
+            <div id="grid" class="grid grid-cols-1 min-[720px]:grid-cols-2 min-[1253px]:grid-cols-3 min-[1601px]:grid-cols-4 gap-6">
+                <div class="p-6 pb-8 min-h-[320px] h-full rounded-lg border border-solid border-[1px solid #5f6368]" id="card">
+                    <div class="mb-8">
+                        <div class="flex items-center justify-between">
+                            <h1 class="text-[16px] font-[500] leading-6">Roboto</h1>
+                            <span class="text-[14px] text-[#9aa0a6]">12 styles</span>
+                        </div>
+                        <span class="text-[14px] text-[#9aa0a6]">Christian Rovertson</span>
+                    </div>
+                    <div class="font_grid_txt">
+                        Whereas recognition of the inherent dignity 
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
-                </div>
-            </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
-                </div>
-            </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
-                </div>
-            </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
-                </div>
-            </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
-                </div>
-            </div>
-            <div class="flex flex-col p-6 pb-8 font_card">
-                <div
-                    class="flex items-center gap-3 text-[#5f6368] dark:text-[#9aa0a6] text-[14px] font-normal leading-5 mb-6">
-                    <h1 class="align-middle text-[16px] font-medium leading-6 text-[#000000de] dark:text-[#e8eaed] m-0">
-                        Roboto</h1>
-                    <span class="align-middle">12 styles</span>
-                    <span>|</span>
-                    <span class="align-middle">Chriestian Robertson</span>
-                </div>
-                <div class="font_temp">
-                    <span>
-                        Everyone has the right to freedom of thought, conscience and religion; this right includes
-                        freedom to change his religion or belief, and freedom, either alone or in community with others
-                        and in public or private, to manifest his religion or belief in teaching, practice, worship and
-                        observance.
-                        Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
-                        opinions without interference and to seek, receive and impart information and ideas through any
-                        media and regardless of frontiers.
-                        Everyone has the right to rest and leisure, including reasonable limitation of working hours and
-                        periodic holidays with pay.
-                    </span>
+            <div id="list">
+                <div class="flex flex-col p-6 pb-8 record">
+                    <div
+                        class="flex items-center gap-3 text-[14px] font-normal leading-5 mb-6">
+                        <h1 class="align-middle text-[16px] font-medium leading-6 m-0">
+                            Roboto</h1>
+                        <span class="align-middle text-[#5f6368] dark:text-[#9aa0a6]">12 styles</span>
+                        <span class="text-[#5f6368] dark:text-[#9aa0a6]">|</span>
+                        <span class="align-middle text-[#5f6368] dark:text-[#9aa0a6]">Chriestian Robertson</span>
+                    </div>
+                    <div class="font_temp">
+                        <span>
+                            Everyone has the right to freedom of thought, conscience and religion; this right includes
+                            freedom to change his religion or belief, and freedom, either alone or in community with others
+                            and in public or private, to manifest his religion or belief in teaching, practice, worship and
+                            observance.
+                            Everyone has the right to freedom of opinion and expression; this right includes freedom to hold
+                            opinions without interference and to seek, receive and impart information and ideas through any
+                            media and regardless of frontiers.
+                            Everyone has the right to rest and leisure, including reasonable limitation of working hours and
+                            periodic holidays with pay.
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
+<script src="script.js"></script>
 </html>
