@@ -9,24 +9,32 @@
     <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Google Font</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Enable dark mode via class
+        };
+    </script>
 </head>
 
-<body class="bg-white dark:bg-[#202124]">
+<body class="bg-white dark:bg-[#202124] text-[#202124] dark:text-[#e8eaed] dark">
     <div class="px-[60px] bg-inherit">
         <div class="sticky top-0 z-[1] bg-inherit">
-            <div class="flex items-center gap-4 w-full">
-                <div class="w-fit lg:min-w-[200px] flex gap-2 items-center">
-                    <i
-                        class="fa-duotone fa-solid fa-book-font text-[36px] lg:text-[24px] text-[#000000de] dark:text-white"></i>
-                    <h4 class="align-middle text-[24px] font-semibold text-[#5f6368] dark:text-white hidden lg:block">
-                        Google Fonts</h4>
+            <div class="flex items-center justify-center gap-4 w-full">
+                <div class="w-fit lg:min-w-[200px] flex gap-2 items-center logo">
+                    <i class="fa-duotone fa-solid fa-book-font text-[36px] lg:text-[24px]"></i>
+                    <h4 class="align-middle text-[24px] font-semibold hidden lg:block">Google Fonts</h4>
                 </div>
                 <div class="w-full h-[88px] flex items-center">
-                    <div class="bg-[#dde7f966] dark:bg-[#6291fc1a] flex gap-4 items-center p-4 w-full rounded-[48px]">
-                        <button id="btn_search"><i class="fa-solid fa-magnifying-glass text-[18px] text-[#5f6368] dark:text-white"></i></button>
+                    <div class="bg-[#dde7f966] dark:bg-[#6291fc1a] flex gap-4 items-center p-4 w-full rounded-[48px] tool_bar">
+                        <button id="btn_search"><i class="fa-solid fa-magnifying-glass text-[18px]"></i></button>
                         <input type="text" class="border-none bg-transparent input_search w-full" placeholder="Search fonts" id="input_text">
                     </div>
                 </div>
+                <button class="text-[24px] p-2.5 " id="btn_theme">
+                    <!-- <i class="fa-thin fa-moon"></i> -->
+                    <i class="fa-light fa-moon"></i>
+                    <!-- <i class="fa-light fa-sun-bright"></i> -->
+                </button>
             </div>
             <div class="py-[5px]">
                 <button
@@ -36,7 +44,7 @@
                 </button>
             </div>
         </div>
-        <div class="overflow-y-auto text-[#202124] dark:text-[#e8eaed]">
+        <div class="overflow-y-auto">
             <div class="flex justify-between items-center mb-4 text-[#5f6368] dark:text-[#9aa0a6]">
                 <span class="text-[12px] font-semibold">1718 of 1718 families</span>
                 <div class="flex items-center gap-5">

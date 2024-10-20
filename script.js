@@ -1,3 +1,28 @@
+//theme switch
+const btnTheme = document.getElementById("btn_theme");
+const htmlElement = document.documentElement;
+
+if (localStorage.getItem("theme") === "dark") {
+    htmlElement.classList.add("dark");
+    btnTheme.innerHTML = `<i class="fa-light fa-sun-bright"></i>`;
+} else {
+    htmlElement.classList.remove("dark");
+    btnTheme.innerHTML = `<i class="fa-light fa-moon"></i>`;
+}
+
+btnTheme.addEventListener("click", function () {
+
+  if (htmlElement.classList.contains('dark')) {
+    htmlElement.classList.remove('dark');
+    btnTheme.innerHTML = `<i class="fa-light fa-moon"></i>`;
+    localStorage.setItem("theme", "light");
+  } else {
+    htmlElement.classList.add('dark');
+    btnTheme.innerHTML = `<i class="fa-light fa-sun-bright"></i>`;
+    localStorage.setItem("theme", "dark");
+  }
+});
+
 //search
 const btnSeach = document.getElementById("btn_search");
 const inputText = document.getElementById("input_text");
